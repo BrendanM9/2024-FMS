@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Blue Score Stand</title>
+    </head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <body>
+        <form action="/blueScorekeeper" method="post">
+            <button id="ready" onclick="redReady()" type="button">Ready for Match</button><br>
+            <select id="3d-cinema">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="3d-cinema">3D Cinema</label><br>
+            <select id="theater-scene">
+                <option value="n">No</option>
+                <option value="b">Blue</option>
+                <option value="p">Pink</option>
+                <option value="o">Orange</option>
+            </select>
+            <label for="theater-scene">Theater Scene</label><br>
+            <select id="theater-scene-2">
+                <option value="n">No</option>
+                <option value="b">Blue</option>
+                <option value="p">Pink</option>
+                <option value="o">Orange</option>
+            </select>
+            <label for="theater-scene-2">2nd Theater Scene</label><br>
+            <select id="immersiveExperience">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="immersiveExperience">Immersive Experience</label><br>
+            <select id="masterpiece">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="masterpiece">Masterpiece</label><br>
+            <select id="masterpiece-2">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="masterpiece-2">2nd Masterpiece</label><br>
+            <select id="augmented-reality">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="augmented-reality">Augmented Reality Status</label><br>
+            <select id="music-concert-lights">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="music-concert-lights">Music Concert Lights</label><br>
+            <select id="music-concert-sound">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="music-concert-sound">Music Concert Sound</label><br>
+            <select id="hologram-performer">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="hologram-performer">Hologram Performer</label><br>
+            <select id="rolling-camera">
+                <option value="n">No</option>
+                <option value="d">Dark Blue</option>
+                <option value="m">Dark & Medium Blue</option>
+                <option value="l">Dark, Medium, & Light Blue</option>
+            </select>
+            <label for="rolling-camera">Rolling Camera</label><br>
+            <select id="movie-set">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="movie-set">Movie Set Boat</label><br>
+            <select id="movie-set-2">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="movie-set-2">Movie Set Camera</label><br>
+            <select id="sound-mixer">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <label for="sound-mixer">Sound Mixer</label><br>
+            <select id="light-show">
+                <option value="n">No</option>
+                <option value="y">Yellow</option>
+                <option value="g">Green</option>
+                <option value="b">Blue</option>
+            </select>
+            <label for="light-show">Light Show</label><br>
+            <select id="vr-artist">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="vr-artist">Virtual Reality Artist Mover</label><br>
+            <select id="vr-artist-2">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="vr-artist-2">Virtual Reality Artist Past Dot</label><br>
+            <select id="craft-creator">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="craft-creator">Craft Creator open</label><br>
+            <select id="craft-creator-2">
+                <option value="n">No</option>
+                <option value="y">Yes</option>
+            </select>
+            <label for="craft-creator-2">Craft Creator pink latch fully down</label><br>
+            <select id="audience-delivery">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <label for="audience-delivery">Audience Members completely in target destination</label><br>
+            <select id="audience-delivery-2">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <label for="audience-delivery-2">Destinations with an audience member fully in it.</label><br>
+            <select id="expert-delivery">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label for="expert-delivery">Experts partly or fully in their target</label><br>
+            <select id="precision-tokens">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <label for="precision-tokens">Precision Tokens left</label><br>
+            <select id="gracious-prof">
+                <option>Not Yet Scored</option>
+                <option value="2">Developing</option>
+                <option value="3">Accomplished</option>
+                <option value="4">Exceeds</option>
+            </select>
+            <label for="gracious-prof"><em>Gracious Profesionalism</em> displayed at the robot game table:</label><br>
+            <button id="finalize" onclick="finals()" type="button">Finalize Scores</button>
+        </form>
+        <script>
+            var final = 0;
+            var readyStatus = 0;
+            var intervalID2 = setInterval(update_status, 1000)
+            function update_status(){
+                $.getJSON("/test5",
+                function(data){
+                    console.log(data)
+                    if(data === "1"){
+                        final = 0
+                        readyStatus = 0
+                    }
+                })
+            }
+        </script>
+        <script>
+            
+            window.setInterval(function(){
+                jsSubmit();
+            }, 1000);
+            function finals(){
+                if(final === 0){
+                    final = 1;
+                } else {
+                    final = 1
+                }
+            }
+            function redReady(){
+                readyStatus = 1
+            }
+            function jsSubmit(){
+                var cinema = document.getElementById("3d-cinema").value
+                var theaterscene = document.getElementById("theater-scene").value
+                var theaterscene2 = document.getElementById("theater-scene-2").value
+                var immersiveExperience = document.getElementById("immersiveExperience").value
+                var masterpiece = document.getElementById("masterpiece").value
+                var masterpiece2 = document.getElementById("masterpiece-2").value
+                var augmentedReality = document.getElementById("augmented-reality").value
+                var musicConcertLights = document.getElementById("music-concert-lights").value
+                var musicConcertSound = document.getElementById("music-concert-sound").value
+                var hologramPerformer = document.getElementById("hologram-performer").value
+                var rollingCamera = document.getElementById("rolling-camera").value
+                var movieSet = document.getElementById("movie-set").value
+                var movieSet2 = document.getElementById("movie-set-2").value
+                var soundMixer = document.getElementById("sound-mixer").value
+                var lightShow = document.getElementById("light-show").value
+                var vrArtist = document.getElementById("vr-artist").value
+                var vrArtist2 = document.getElementById("vr-artist-2").value
+                var craftCreator = document.getElementById("craft-creator").value
+                var craftCreator2 = document.getElementById("craft-creator-2").value
+                var audienceDelivery = document.getElementById("audience-delivery").value
+                var audienceDelivery2 = document.getElementById("audience-delivery-2").value
+                var expertDelivery = document.getElementById("expert-delivery").value
+                var precisionTokens = document.getElementById("precision-tokens").value
+                var graciousProf = document.getElementById("gracious-prof").value
+                $.get( "/getmethodblue/"+cinema+theaterscene+theaterscene2+immersiveExperience+masterpiece+masterpiece2+augmentedReality+musicConcertLights+musicConcertSound+hologramPerformer+rollingCamera+movieSet+movieSet2+soundMixer+lightShow+vrArtist+vrArtist2+craftCreator+craftCreator2+audienceDelivery+audienceDelivery2+expertDelivery+precisionTokens+graciousProf+"/"+readyStatus+final);
+                //console.log("/getmethodred/"+cinema+theaterscene+theaterscene2+immersiveExperience+"/"+final)
+            }
+        </script>
+    </body>
+</html>
